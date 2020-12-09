@@ -230,6 +230,7 @@ Sampleサービスの基本設計を行う
 
 * ネットワーク診断には、目視による設定の確認や、疑似攻撃を実施することにより脆弱性を発見する診断（ペネトレーションテスト）、ネットワーク上のサーバや通信機能をもつソフトウェアなどに対する脆弱性調査等がある
   * 実施するか否かについて書く
+  * AWSでの侵入テスト https://aws.amazon.com/jp/security/penetration-testing/
 
 ## セキュリティパッチ適用
 
@@ -305,16 +306,13 @@ Sampleサービスの基本設計を行う
 
 ## DDOS対策
 
-### 前提
+* どのように DDSO対策するかを書く
 * AWS では、レイヤー 3 およびレイヤー 4 の DDoS 攻撃への対処が自動的に行われる
     *  [DDoS 攻撃への対応](https://docs.aws.amazon.com/ja_jp/waf/latest/developerguide/ddos-responding.html) 
         * ただし 全てのレイヤー 3 およびレイヤー 4 の DDoS 攻撃を防げるとは限らない
-
 *  [AWS Best Practices for DDoS Resiliency](https://d1.awsstatic.com/whitepapers/Security/DDoS_White_Paper.pdf) を踏まえると事前対処としては以下となる
     * CloudFrontなどのCDNを用いてコンテンツをキャッシュしておく
     * WEBサーバとなる EC2 は ELB + AutoScaling を用いてトラフィックの増加に耐えることが可能な仕組みにしておく
 
-### 方針
-* 基本的には各サービスのシステム要件(DDOS対策の要不要、キャッシュの可不可、AutoScalingの可不可)によって方針を決めることとする
 
 
