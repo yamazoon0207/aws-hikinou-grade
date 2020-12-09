@@ -1,5 +1,6 @@
 # aws-hikinou-grade
 IPAの作成している **[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** を活用して AWS環境 での非機能を設計をするための雛形
+非機能要求グレードはそこそこ細かいため簡単に実施可能なように要点をまとめる
 
 ## 非機能要求グレード とは  
 
