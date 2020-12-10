@@ -1,6 +1,8 @@
 # aws-hikinou-grade
-IPAの作成している **[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** を活用して AWS環境 での非機能を設計をするための雛形
-非機能要求グレードはそこそこ細かいため簡単に実施可能なように要点をまとめる
+IPAの作成している **[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** を参考にして AWS利用時に非機能要求を整理するための道具  
+非機能要求グレードはそこそこ細かいため簡潔に実施可能なように要点をまとめる
+また [AWS Well-Architected](https://aws.amazon.com/jp/architecture/well-architected/) も取り入れる予定
+
 
 ## 非機能要求グレード とは  
 
@@ -10,9 +12,12 @@ IPAの作成している **[「非機能要求グレード」](https://www.ipa.g
 
 ## aws-hikinou-grade 説明
 
-* 非機能要求グレード活用シート_AWS編.md
-  * 「非機能要求グレード活用シート_AWS編.xlsx」を MarkDown に変換し AWS環境 での非機能を設計するために用語や記載内容を改めたもの
-    * これを設計の際に使う
+* 「分割」フォルダ配下のファイル
+  * 「非機能要求グレード活用シート_AWS編.xlsx」を MarkDown に変換し AWS環境 での非機能を設計するために用語や記載内容を改め分割したもの
+    * 1-セキュリティ.md
+    * 2-可用性.md
+    * 3-性能・拡張性.md
+    * 4-運用・保守性.md
 
 
 * 非機能要求グレード活用シート_AWS編.xlsx
