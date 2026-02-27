@@ -23,8 +23,8 @@ IPAが提供する **[「非機能要求グレード」](https://www.ipa.go.jp/s
 
 ### 「AIエージェント用」フォルダ
 
-aws-presales-playbookから非機能要件に関する内容（BANTC以外）を抽出したナレッジベースです。  
-AIエージェントがAWS案件のプリセールス活動で参照することを想定しています。
+aws-presales-playbookから非機能要件に関する内容を抽出したナレッジベースです。  
+AIエージェントがAWS案件の要件定義活動で参照することを想定しています。
 
 * presales-aws-nonfunctional.md - AWS非機能要件の全体概要
 * presales-security.md - セキュリティ要件
