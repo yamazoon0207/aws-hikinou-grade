@@ -1,26 +1,44 @@
 # aws-hikinou-grade
-IPAの作成している **[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** を参考にして AWS利用時に非機能要求を整理するための道具  
-非機能要求グレードはそこそこ細かいため簡潔に実施可能なように要点をまとめる  
-また [AWS Well-Architected](https://aws.amazon.com/jp/architecture/well-architected/) も取り入れる予定  
 
-## 非機能要求グレード とは  
+IPAが提供する **[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** をベースに、AWS環境における非機能要求を整理するためのツールです。  
+非機能要求グレードは項目が細かいため、実務で使いやすいよう要点を絞ってまとめています。  
+また、[AWS Well-Architected](https://aws.amazon.com/jp/architecture/well-architected/) のベストプラクティスも取り入れる予定です。
 
-* システムの稼働率や性能目標、災害時の復旧時間、セキュリティ対策方針などの「非機能」に関する要求を可視化するための表
-  * システムに求める「機能」の一覧は定義しやすいものの 「非機能」の一覧については定義が難しい、または定義していないも多かったため可視化するために出来た道具
+## 非機能要求グレードとは
 
-## aws-hikinou-grade 説明
+システムの稼働率、性能目標、災害時の復旧時間、セキュリティ対策方針など、「非機能要件」を可視化するためのフレームワークです。
 
-* 「分割」フォルダ配下のファイル
-  * 下の「tmp--非機能要求グレード活用シート_AWS編.xlsx」を MarkDown に変換し AWS環境 での非機能を設計するために用語や記載内容を改め分割したもの
-    * 1-セキュリティ.md
-    * 2-可用性.md
-    * 3-性能・拡張性.md
-    * 4-運用・保守性.md
+機能要件は一覧化しやすい一方で、非機能要件は定義が難しく、見落とされがちです。このフレームワークを使うことで、非機能要件を漏れなく整理できます。
 
-* tmp--非機能要求グレード活用シート_AWS編.xlsx
-  * **[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** に梱包している「06_活用シート.xls」を色付けした一時ファイル
-    * 構築に関わるもの→水
-    * 運用に関わるもの→緑
-    * 移行に関わるもの→橙
-    * AWSでは不要なもの→灰
+## 構成
 
+### 「分割」フォルダ
+
+「tmp--非機能要求グレード活用シート_AWS編.xlsx」をMarkdown形式に変換し、AWS環境に合わせて用語や内容を調整したファイル群です。
+
+* 1-セキュリティ.md
+* 2-可用性.md
+* 3-性能・拡張性.md
+* 4-運用・保守性.md
+
+### 「AIエージェント用」フォルダ
+
+aws-presales-playbookから非機能要件に関する内容（BANTC以外）を抽出したナレッジベースです。  
+AIエージェントがAWS案件のプリセールス活動で参照することを想定しています。
+
+* presales-aws-nonfunctional.md - AWS非機能要件の全体概要
+* presales-security.md - セキュリティ要件
+* presales-availability.md - 可用性要件
+* presales-performance.md - 性能・拡張性要件
+* presales-operability.md - 運用・保守性要件
+* presales-compliance.md - コンプライアンス要件
+* presales-cost.md - コスト最適化要件
+
+### tmp--非機能要求グレード活用シート_AWS編.xlsx
+
+**[「非機能要求グレード」](https://www.ipa.go.jp/sec/softwareengineering/std/ent03-b.html)** に含まれる「06_活用シート.xls」に色付けした作業用ファイルです。
+
+* 構築に関わる項目 → 水色
+* 運用に関わる項目 → 緑色
+* 移行に関わる項目 → 橙色
+* AWSでは不要な項目 → 灰色
